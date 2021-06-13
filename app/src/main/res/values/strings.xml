@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Closet</string>
+    <string name="my_drawers">My Drawers</string>
+    <string name="cabin">Cabin Room</string>
+    <string name="events">My Events</string>
+    <string name="showClothes">My Clothes</string>
+    <string name="addClothItem">Add Cloth Item</string>
+    <string name="confirm">Confirm</string>
+    <string name="clothing_type">Clothing Type</string>
+    <string name="clothing_color">Clothing Color</string>
+    <string name="clothing_date">Date Of Purchase</string>
+    <string name="clothing_price">Clothing Price</string>
+    <string name="drawer_name">Drawer name</string>
+    <string name="head">Head</string>
+    <string name="face">Face</string>
+    <string name="upper">Upper Body</string>
+    <string name="lower">Lower Body</string>
+    <string name="foot">Foot</string>
+    <string name="update">Update</string>
+    <string name="combinationName">Combination"'s Name</string>
+    <string name="eventName">Event"'s Name</string>
+    <string name="eventType">Event"'s Type</string>
+    <string name="eventDate">Event"'s Date</string>
+    <string name="eventLocation">Event"'s Location</string>
+    <string name="eventClothes">Event"'s Clothes</string>
+    <string name="quest">Add the event to decide what to wear.</string>
+</resources>

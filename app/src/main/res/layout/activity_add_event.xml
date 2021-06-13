@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEvent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/eventName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eventName"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/eventType">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eventType"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addDate"
+                android:src="@drawable/ic_date"
+                android:layout_margin="8dp"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/myDate"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:textSize="18sp"
+                android:textStyle="italic|bold"
+                android:textColor="@color/black_500"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/dis1"
+                android:enabled="false"
+                android:textSize="18sp"
+                android:hint="@string/eventDate"
+                android:textStyle="italic|bold"
+                android:textColor="@color/black_500"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addLocation"
+                android:src="@drawable/ic_add_location_24"
+                android:layout_margin="8dp"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/location"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:textSize="18sp"
+                android:textStyle="italic|bold"
+                android:textColor="@color/black_500"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:textSize="18sp"
+                android:id="@+id/dis2"
+                android:hint="@string/eventLocation"
+                android:textStyle="italic|bold"
+                android:textColor="@color/black_500"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/wear"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:hint="@string/quest"
+            android:textColor="@color/black_200"
+            android:textStyle="italic|bold"
+            />
+        <Button
+            android:id="@+id/updateEvent"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/update" />
+    </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addEventItem"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            app:fabSize="normal"
+            android:elevation="6dp"
+            android:src="@drawable/ic_baseline_add_24"
+            tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
+</RelativeLayout>
